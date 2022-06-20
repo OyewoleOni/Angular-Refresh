@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WishMessageComponent implements OnInit {
 
+  public message: string = "Hello";
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  public updateMessage(mesg:string):void{
+    this.message = mesg;
+  }
+
+  public sayGoodAfternoon():void{
+    this.message =  "Good Afternoon";
+  }
+
+  public sayGoodMorning():void{
+    this.message = "Good Morning";
+  }
+
+  public sayGoodEvening():void{
+    this.message = "Good Evening";
+  }
 }
