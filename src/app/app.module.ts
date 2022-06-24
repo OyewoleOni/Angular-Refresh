@@ -5,14 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { CounterComponent } from './components/counter/counter.component';
-import { WishMessageComponent } from './components/wish-message/wish-message.component'
+import { WishMessageComponent } from './components/wish-message/wish-message.component';
+import { ProductItemComponent } from './components/product-item/product-item.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     CounterComponent,
-    WishMessageComponent
+    WishMessageComponent,
+    ProductItemComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
