@@ -10,7 +10,8 @@ import { WishMessageComponent } from './components/wish-message/wish-message.com
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { ChangeUsernameComponent } from './components/change-username/change-username.component';
-import { ChangeUsernameAutoComponent } from './components/change-username-auto/change-username-auto.component'
+import { ChangeUsernameAutoComponent } from './components/change-username-auto/change-username-auto.component';
+import { SmsAppComponent } from './components/sms-app/sms-app.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ChangeUsernameAutoComponent } from './components/change-username-auto/c
     ProductItemComponent,
     ShoppingCartComponent,
     ChangeUsernameComponent,
-    ChangeUsernameAutoComponent
+    ChangeUsernameAutoComponent,
+    SmsAppComponent
   ],
   imports: [
     BrowserModule,
