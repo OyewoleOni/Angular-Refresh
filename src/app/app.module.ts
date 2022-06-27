@@ -13,7 +13,8 @@ import { ChangeUsernameComponent } from './components/change-username/change-use
 import { ChangeUsernameAutoComponent } from './components/change-username-auto/change-username-auto.component';
 import { SmsAppComponent } from './components/sms-app/sms-app.component';
 import { ShowPasswordComponent } from './components/show-password/show-password.component';
-import { AmountRangeComponent } from './components/amount-range/amount-range.component'
+import { AmountRangeComponent } from './components/amount-range/amount-range.component';
+import { ThemeComponent } from './components/theme/theme.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AmountRangeComponent } from './components/amount-range/amount-range.com
     ChangeUsernameAutoComponent,
     SmsAppComponent,
     ShowPasswordComponent,
-    AmountRangeComponent
+    AmountRangeComponent,
+    ThemeComponent
   ],
   imports: [
     BrowserModule,
