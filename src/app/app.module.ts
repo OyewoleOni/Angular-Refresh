@@ -17,7 +17,8 @@ import { AmountRangeComponent } from './components/amount-range/amount-range.com
 import { ThemeComponent } from './components/theme/theme.component';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { AuthUserComponent } from './components/auth-user/auth-user.component';
-import { CartComponent } from './components/cart/cart.component'
+import { CartComponent } from './components/cart/cart.component';
+import { ProductComponent } from './components/product/product.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CartComponent } from './components/cart/cart.component'
     ThemeComponent,
     UserRegisterComponent,
     AuthUserComponent,
-    CartComponent
+    CartComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

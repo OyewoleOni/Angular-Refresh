@@ -13,24 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3" *ngFor="let product of products">
-                <div class="card shadow">
-                    <div class="card-header">
-                        <img [src]="product.image" alt="" class="image-fluid"/>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                Name: {{product.name}}
-                            </li>
-                            <li class="list-group-item">
-                                Price: {{product.price | currency}}
-                            </li>
-                            <li class="list-group-item">
-                                Quantity: {{product.qty}}
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+               <app-product [product]="product"></app-product>
             </div>
         </div>
     </div>
