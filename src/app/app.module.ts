@@ -16,7 +16,8 @@ import { ShowPasswordComponent } from './components/show-password/show-password.
 import { AmountRangeComponent } from './components/amount-range/amount-range.component';
 import { ThemeComponent } from './components/theme/theme.component';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
-import { AuthUserComponent } from './components/auth-user/auth-user.component'
+import { AuthUserComponent } from './components/auth-user/auth-user.component';
+import { CartComponent } from './components/cart/cart.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AuthUserComponent } from './components/auth-user/auth-user.component'
     AmountRangeComponent,
     ThemeComponent,
     UserRegisterComponent,
-    AuthUserComponent
+    AuthUserComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
