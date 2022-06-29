@@ -18,7 +18,8 @@ import { ThemeComponent } from './components/theme/theme.component';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { AuthUserComponent } from './components/auth-user/auth-user.component';
 import { CartComponent } from './components/cart/cart.component';
-import { ProductComponent } from './components/product/product.component'
+import { ProductComponent } from './components/product/product.component';
+import { PipesComponent } from './components/pipes/pipes.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ProductComponent } from './components/product/product.component'
     UserRegisterComponent,
     AuthUserComponent,
     CartComponent,
-    ProductComponent
+    ProductComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
