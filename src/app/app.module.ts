@@ -15,7 +15,8 @@ import { SmsAppComponent } from './components/sms-app/sms-app.component';
 import { ShowPasswordComponent } from './components/show-password/show-password.component';
 import { AmountRangeComponent } from './components/amount-range/amount-range.component';
 import { ThemeComponent } from './components/theme/theme.component';
-import { UserRegisterComponent } from './components/user-register/user-register.component'
+import { UserRegisterComponent } from './components/user-register/user-register.component';
+import { AuthUserComponent } from './components/auth-user/auth-user.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserRegisterComponent } from './components/user-register/user-register.
     ShowPasswordComponent,
     AmountRangeComponent,
     ThemeComponent,
-    UserRegisterComponent
+    UserRegisterComponent,
+    AuthUserComponent
   ],
   imports: [
     BrowserModule,
