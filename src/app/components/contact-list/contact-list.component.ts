@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Contact } from 'src/app/models/Contact';
 import { ContactService } from 'src/app/services/contact.service';
+
 
 @Component({
   selector: 'app-contact-list',
@@ -12,6 +13,8 @@ export class ContactListComponent implements OnInit {
   public contacts:Contact[] = [] as Contact[];
   public errorMessage:string | undefined;
 
+  @Output() sendContact = new EventEmitter();
+
   constructor(private contactService: ContactService) { }
 
   ngOnInit(): void {
@@ -20,6 +23,10 @@ export class ContactListComponent implements OnInit {
     }, (error) => {
       this.errorMessage = error;
     })
+  }
+
+  public selectContact(contact: Contact){
+    this.sendContact.emit(contact);
   }
 
 }

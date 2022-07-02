@@ -7,13 +7,14 @@
     </div>
 </div>
 
+
 <div class="container">
     <div class="row">
         <div class="col-md-9">
-            <app-contact-list></app-contact-list>
+            <app-contact-list (sendContact)="selectedContact=$event"></app-contact-list>
         </div>
         <div class="col-md-3">
-            <app-contact-card></app-contact-card>
+            <app-contact-card [selectedContact]="selectedContact"></app-contact-card>
         </div>
     </div>
 </div>

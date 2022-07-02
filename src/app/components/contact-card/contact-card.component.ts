@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Contact } from 'src/app/models/Contact';
 
 @Component({
   selector: 'app-contact-card',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactCardComponent implements OnInit {
 
+  @Input() selectedContact: Contact = {} as Contact;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public isNotEmpty(){
+    return Object.keys(this.selectedContact).length > 0;
   }
 
 }
