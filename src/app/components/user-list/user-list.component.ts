@@ -10,6 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 export class UserListComponent implements OnInit {
 
   public users:User[] = [] as User[];
+  public errorMessage: string | undefined= undefined;
 
   constructor(private userService: UserService) { }
 
@@ -19,6 +20,8 @@ export class UserListComponent implements OnInit {
   public getUsersData(){
     this.userService.getUsers().subscribe((data) => {
       this.users = data;
+    }, (error) => {
+      this.errorMessage = error;
     })
   }
 }

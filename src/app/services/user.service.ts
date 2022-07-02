@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 import { User } from '../models/User';
 
 @Injectable({
@@ -12,7 +12,27 @@ export class UserService {
 
   public getUsers():Observable<User[]>{
     let dataURL: string = 'https://jsonplaceholder.typicode.com/users';
-    return this.httpClient.get<User[]>(dataURL)
+    return this.httpClient.get<User[]>(dataURL).pipe(
+      catchError(this.handleError)
+    )
   }
+  
+  private handleError(error: HttpErrorResponse) {
 
+    let errorMessage: string = '';
+    if (error.status === 0) {
+      // A client-side or network error occurred. Handle it accordingly.
+      errorMessage = `An error occurred: ${error.error}`
+      //console.error('An error occurred:', error.error);
+    } else {
+      // The backend returned an unsuccessful response code.
+      // The response body may contain clues as to what went wrong.
+      // console.error(
+      //   `Backend returned code ${error.status}, body was: `, error.error);
+        errorMessage = `Backend returned code ${error.status}, body was: ${error.error}`
+    }
+    // Return an observable with a user-facing error message.
+    errorMessage += '\n Something bad happened; please try again later.';
+    return throwError(() => new Error(errorMessage));
+  }
 }
