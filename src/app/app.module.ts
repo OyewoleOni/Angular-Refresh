@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,7 +20,8 @@ import { UserRegisterComponent } from './components/user-register/user-register.
 import { AuthUserComponent } from './components/auth-user/auth-user.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductComponent } from './components/product/product.component';
-import { PipesComponent } from './components/pipes/pipes.component'
+import { PipesComponent } from './components/pipes/pipes.component';
+import { UserListComponent } from './components/user-list/user-list.component'
 
 @NgModule({
   declarations: [
@@ -39,12 +41,14 @@ import { PipesComponent } from './components/pipes/pipes.component'
     AuthUserComponent,
     CartComponent,
     ProductComponent,
-    PipesComponent
+    PipesComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
