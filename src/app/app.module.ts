@@ -21,7 +21,10 @@ import { AuthUserComponent } from './components/auth-user/auth-user.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductComponent } from './components/product/product.component';
 import { PipesComponent } from './components/pipes/pipes.component';
-import { UserListComponent } from './components/user-list/user-list.component'
+import { UserListComponent } from './components/user-list/user-list.component';
+import { ContactAppComponent } from './components/contact-app/contact-app.component';
+import { ContactListComponent } from './components/contact-list/contact-list.component';
+import { ContactCardComponent } from './components/contact-card/contact-card.component'
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { UserListComponent } from './components/user-list/user-list.component'
     CartComponent,
     ProductComponent,
     PipesComponent,
-    UserListComponent
+    UserListComponent,
+    ContactAppComponent,
+    ContactListComponent,
+    ContactCardComponent
   ],
   imports: [
     BrowserModule,
