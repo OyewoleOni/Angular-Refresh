@@ -24,7 +24,12 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { ContactAppComponent } from './components/contact-app/contact-app.component';
 import { ContactListComponent } from './components/contact-list/contact-list.component';
-import { ContactCardComponent } from './components/contact-card/contact-card.component'
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CountryListComponent } from './components/country-list/country-list.component';
+import { CountryDetailsComponent } from './components/country-details/country-details.component'
 
 @NgModule({
   declarations: [
@@ -48,7 +53,12 @@ import { ContactCardComponent } from './components/contact-card/contact-card.com
     UserListComponent,
     ContactAppComponent,
     ContactListComponent,
-    ContactCardComponent
+    ContactCardComponent,
+    HomeComponent,
+    AboutComponent,
+    NavbarComponent,
+    CountryListComponent,
+    CountryDetailsComponent
   ],
   imports: [
     BrowserModule,
