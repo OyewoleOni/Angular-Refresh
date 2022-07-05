@@ -29,7 +29,9 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CountryListComponent } from './components/country-list/country-list.component';
-import { CountryDetailsComponent } from './components/country-details/country-details.component'
+import { CountryDetailsComponent } from './components/country-details/country-details.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { ContactDetailsComponent } from './components/contact-details/contact-details.component'
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { CountryDetailsComponent } from './components/country-details/country-de
     AboutComponent,
     NavbarComponent,
     CountryListComponent,
-    CountryDetailsComponent
+    CountryDetailsComponent,
+    ContactsComponent,
+    ContactDetailsComponent
   ],
   imports: [
     BrowserModule,
