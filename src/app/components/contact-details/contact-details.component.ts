@@ -32,5 +32,7 @@ export class ContactDetailsComponent implements OnInit {
    
 
   }
-
+  public isNotEmpty(){
+    return Object.keys(this.contact).length > 0;
+  }
 }

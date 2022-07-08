@@ -1,3 +1,40 @@
-<p>contact-details works!</p>
+<div class="container mt-3" *ngIf="isNotEmpty()">
+    <div class="row">
+        <div class="col">
+            <p class="h3 text-danger">{{contact.name.first}} {{contact.name.last}} Details</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, culpa impedit? Rerum rem similique omnis, ipsam dignissimos illum vero repudiandae, praesentium nostrum assumenda quaerat ut possimus tempore veritatis voluptas temporibus!</p>
+        </div>
+    </div>
+</div>
 
-<h3>{{contactId | json}}</h3>
+<div class="container" *ngIf="isNotEmpty()">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img [src]="contact.picture.large" alt="">
+                        </div>
+                        <div class="col-md-9">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Name : {{contact.name.first}} {{contact.name.last}}
+                                </li>
+                                <li class="list-group-item">
+                                    Age : {{contact.dob.age}} Yrs.
+                                </li>
+                                <li class="list-group-item">
+                                    Email : {{contact.email}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a routerLink="/contacts" class="btn btn-danger btn-sm">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
